@@ -1,0 +1,509 @@
+/*transicion */
+.position-relative{
+    background-image: url('/imagenes/uy.jpg');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand{
+    color: #ffffff; /* corregido text-color a color */
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    align-items: center;
+    color: #ffffff;
+    border: 0;
+    padding: 20px 30px;
+    background-color: #4e253472;
+    width: auto;
+}
+
+#a{
+    border: 0;
+    border-radius: 8px;
+    padding: 20px 30px;
+    background-color:#e4a5b4 ;
+}
+#btn {
+    background-color: #e4a5b4;
+    width: 35%;
+    padding: 20px 30px;
+    margin: 0 auto; /* para centrar horizontalmente en bloque */
+    display: block; /* que el botón se comporte como bloque */
+    text-align: center;
+    user-select: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#a:hover{
+    color: #ddd;
+    background-color:#b62b68af ;
+}
+#redes{
+    display: flex;
+    justify-content: center; /* centra horizontalmente todos los hijos */
+    flex-wrap: wrap; /* para que los hijos puedan ocupar varias filas */
+    gap: 1rem;
+}
+#siga {
+    flex: 1 1 calc(25% - 0.5rem);
+    min-width: 300px;
+    max-width: 400px;
+    margin: 1.5rem 0;  /* vertical solo, sin margen lateral */
+}
+
+
+
+footer {
+    background-color: #e4a5b4; /* Fondo */
+    color: #ddd; /* Texto claro */
+    padding: 20px 15px;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Centrado horizontal y vertical */
+    display: flex;
+    flex-direction: column; /* para que las líneas estén una abajo de otra */
+    justify-content: center; /* centra verticalmente */
+    align-items: center;     /* centra horizontalmente */
+
+    text-align: center;
+    user-select: none;
+    height: auto; /* altura mínima para que se note la centración vertical */
+    gap: 6px; /* separa líneas si hay varias */
+}
+
+.footer-top {
+    margin-bottom: 10px;
+}
+
+.footer p{
+    background-color: #e4a5b4; /* Fondo */
+    color: #ddd; /* Texto claro */
+    padding: 20px 15px;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Centrado horizontal y vertical */
+    display: flex;
+    flex-direction: column; /* para que las líneas estén una abajo de otra */
+    justify-content: center; /* centra verticalmente */
+    align-items: center;     /* centra horizontalmente */
+
+    text-align: center;
+    user-select: none;
+    height: auto; /* altura mínima para que se note la centración vertical */
+    gap: 6px; /* separa líneas si hay varias */
+}
+
+.back-to-top {
+    display: inline-block;
+    background-color: #00d9ff;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 217, 255, 0.5);
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background-color: #009bbc;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 6px 14px rgba(0, 155, 188, 0.7);
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.footer-link {
+    color: #00d9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: #009bbc;
+    text-decoration: underline;
+    outline: none;
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+    .footer-bottom {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .footer-links {
+        gap: 10px;
+    }
+}
+
+.hhha, .btn-secondary {
+    border-radius: 8px;
+    padding: 20px 30px;
+    background-color: #e4a5b4;
+    border: 0;
+}
+
+.hhha:hover, .btn-secondary:hover {
+    background-color: #b62b68af;
+}
+
+#menu{
+    align-items: flex-end;
+}
+/* Menú principal: flexbox para alinear elementos */
+.navbar-nav {
+    display: flex;
+    gap: 1.5rem; /* separación entre ítems */
+    padding-left: 0;
+    list-style: none;
+        padding: 8px 12px;
+    margin-left: 65%; /* o más, ajusta según te guste */
+
+}
+
+/* Ítems del menú */
+.navbar-nav > li {
+    position: relative; /* para submenú posicionado */
+}
+
+/* Enlaces principales */
+.navbar-nav > li > a {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover y foco para accesibilidad */
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    background-color: #a42c66c5;
+    color: white;
+    outline: none;
+}
+
+/* Indicador visual para ítems con submenú (flecha) */
+.navbar-nav > li.has-submenu > a::after {
+    content: " ▼"; /* flecha hacia abajo */
+    font-size: 0.6rem;
+    margin-left: 0.3rem;
+}
+
+/* Submenú oculto inicialmente */
+.navbar-nav ul {
+    position: absolute;
+    top: 100%; /* justo debajo del item padre */
+    right: 0; /* alineado a la derecha del padre */
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(160, 17, 17, 0.25);
+    padding: 0.5rem 0;
+    border-radius: 0 0 4px 4px;
+    min-width: 180px;
+    display: none;
+    z-index: 1000;
+    list-style: none;
+}
+
+/* Mostrar submenú al hover o foco */
+.navbar-nav > li:hover > ul,
+.navbar-nav > li:focus-within > ul {
+    display: block;
+}
+
+/* Ítems del submenú */
+.navbar-nav ul li {
+    width: 100%;
+}
+
+/* Enlaces submenú */
+.navbar-nav ul li a {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover y foco submenú */
+.navbar-nav ul li a:hover,
+.navbar-nav ul li a:focus {
+    background-color: #f0e0e6;
+    color: #a42c66;
+    outline: none;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #e4a5b4;
+    padding: 0.5rem 1rem;
+}
+
+/* Marca (logo) */
+.navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Opcional: cambia el cursor para ítems con submenú */
+.navbar-nav > li.has-submenu > a {
+    cursor: pointer;
+}
+
+
+/* Tarjetas del carrito de compras */
+ .card, .card.mb-4 {
+        flex: 1 1 calc(40% - 1rem);
+        min-width: 400px;
+        max-width: 450px;
+    }
+    .card.mb-4 img {
+        max-width: 350px;
+        min-width: 300px;
+        height: 300px;
+    }
+    
+.card, .card.mb-4 {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    margin: 0 0 1.5rem 0;
+    border-color: #e4a5b4;
+    min-width: 500px;
+    max-width: 500px;
+    flex: 1 1 25%;
+    box-sizing: border-box;
+}
+
+.card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #e789c5;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #914876;
+}
+
+.img-fluid {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border: 0;
+    align-self: center;
+}
+
+/* Contenedor del tablero */
+#tablero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Responsive: tarjetas se ajustan en tamaños */
+@media (max-width: 1068px) {
+    .card.mb-4 {
+        flex: 1 1 calc(30% - 1rem);
+        min-width: 350px;
+        max-width: 400px;
+    }
+    .card.mb-4 img {
+        max-width: 250px;
+        min-width: 200px;
+        height: 300px;
+    }
+     .col-lg-4 {
+     flex: 1 1 calc(30% - 1rem);
+        min-width: 350px;
+        max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+    .card, .card.mb-4 {
+        flex: 1 1 calc(40% - 1rem);
+        min-width: 400px;
+        max-width: 450px;
+    }
+    .card.mb-4 img {
+        max-width: 350px;
+        min-width: 300px;
+        height: 300px;
+    }
+    .col-lg-4 {
+    flex: 1 1 calc(40% - 1rem);
+        min-width: 400px;
+        max-width: 450px;
+  }
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+}
+
+@media (max-width: 576px) {
+    .card, .card.mb-4 {
+        flex: 1 1 80%;
+        min-width: 300px;
+        max-width: 350px;
+        margin: 10%;
+    }
+    .card.mb-4 img {
+        max-width: 400px;
+        min-width: 300px;
+        height: 300px;
+    }
+     .col-lg-4 {
+    flex: 1 1 calc(40% - 1rem);
+        min-width: 400px;
+        max-width: 450px;
+  }
+}
+
+/* Versión móvil: imagen a la derecha, texto a la izquierda */
+@media (max-width: 769px) {
+    .card.mb-4, .card {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+        max-width: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .card-body, .card-text, .card-title {
+        flex: 1;
+        text-align: left;
+        order: 1;
+    }
+    .card.mb-4 img, .card img {
+        min-width: 200px;
+        max-width: 250px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        order: 2;
+    }
+}
+
+/* Popup resumen pedido */
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    height: auto;
+    width: 420px;
+    background:#ffe9e9;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Botón flotante */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 120px;
+    right: 30px;
+    background-color: #f3f2ee;
+    color: #000;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    cursor: pointer;
+}
+.float:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #1ab152;
+    animation: shake 1s infinite;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px #08100bfa  rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0)}
+    25% { transform: translateX(5px)}
+    50% { transform: translateX(-5px)}
+    75% { transform: translateX(5px)}
+    100% { transform: translateX(0)}
+}

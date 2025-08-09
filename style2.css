@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute; /* Cambia la posición a absoluta para alinearlo en la parte superior */
+    top: 0; /* Alinea el encabezado en la parte superior */
+    left: 0; /* Alinea el encabezado a la izquierda */
+    display: flex; /* Usa Flexbox para alinear los elementos internos */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    background-color: #e4a5b4; /* Color de fondo del encabezado */
+    z-index: 1000; /* Asegura que el encabezado esté encima de otros elementos */
+}
+
+body {
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    width: 100%;
+    background-image: url('imagenes/fondo.png');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 0 20px; /* Agrega un poco de espacio a los lados */
+}
+
+h2{
+    font-size:52px ;
+}
+.containe{
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia para el formulario */
+    padding: 20px 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 600px; /* Ancho máximo del formulario */
+    width: 100%;
+    text-align: start;
+
+}
+.col-md-6{
+     width: 100%;
+     height: auto;
+
+}
+
+h2 {
+    text-align: center;
+}
+.btn{
+    border: 0;
+    background-color: #e4a5b4;
+    color: #ffffff;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: #87273db4;
+
+    color: #ffffff;
+}
+
+footer {
+    background-color: #e4a5b4;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 1068px) {
+    .containe{
+        background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia para el formulario */
+        padding: 20px 20px;
+        border-radius: 10px; /* Bordes redondeados */
+        max-width: 600px; /* Ancho máximo del formulario */
+        width: 100%;
+        text-align: start;
+    
+    }
+    .col-md-6{
+         width: 100%;
+         height: auto;
+    
+    }
+}
+
+
+/* Ajusta el tamaño de las tarjetas en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .containe{
+        background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia para el formulario */
+        padding: 20px 20px;
+        border-radius: 10px; /* Bordes redondeados */
+        max-width: 500px; /* Ancho máximo del formulario */
+        width: 100%;
+        text-align: start;
+    
+    }
+    .col-md-6{
+         width: 100%;
+         height: auto;
+    
+    }
+}
+
+@media (max-width: 576px) {
+    .containe{
+        background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia para el formulario */
+        padding: 20px 20px;
+        border-radius: 10px; /* Bordes redondeados */
+        max-width: 400px; /* Ancho máximo del formulario */
+        width: 100%;
+        text-align: start;
+    
+    }
+    .col-md-6{
+         width: 100%;
+         height: auto;
+    
+    }
+}

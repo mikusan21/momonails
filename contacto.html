@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto - MomoNails</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light p-3" style="background-color: #e4a5b4;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span class="fs-2 fw-bold" style="color: rgb(255, 234, 234)">MomoNails</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link fs-5" href="index.html"><b>Inicio</b></a></li>
+                        <li class="nav-item"><a class="nav-link fs-5" href="contacto.html"><b>Contacto</b></a></li>
+                        <li class="nav-item"><a class="nav-link fs-5" href="diseños.html"><b>Diseños</b></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <h1 class="mb-4">Contacto</h1>
+        <p>
+            Para cualquier consulta o sugerencia, por favor completa el siguiente formulario y nos pondremos en
+            contacto contigo a la brevedad. Tu opinión es muy importante para nosotros.
+        </p>
+
+        <section class="mt-5">
+            <h2 id="cita" class="mb-4">Reserva tu Cita</h2>
+            <form id="clientForm" novalidate>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required
+                        aria-required="true" />
+                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Tu apellido" required
+                        aria-required="true" />
+                    <div class="invalid-feedback">Por favor, ingresa tu apellido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo:</label>
+                    <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" required
+                        aria-required="true" />
+                    <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Ej: +51 987 654 321" required
+                        aria-required="true" pattern="[\d\s\+\-]+" />
+                    <div class="invalid-feedback">Por favor, ingresa un teléfono válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripción de las Uñas:</label>
+                    <textarea class="form-control" id="descripcion" rows="3" placeholder="Describe tu diseño ideal"
+                        required aria-required="true"></textarea>
+                    <div class="invalid-feedback">Por favor, describe tus uñas o el servicio que deseas.</div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="acepto" required aria-required="true" />
+                    <label class="form-check-label" for="acepto">Acepto los términos y condiciones</label>
+                    <div class="invalid-feedback">Debes aceptar los términos para continuar.</div>
+                </div>
+
+                <button id="btn" class="btn " type="submit">Enviar</button>
+            </form>
+
+            <div id="mensajeConfirmacion" class="alert alert-success mt-4" role="alert" style="display:none;">
+                ¡Gracias por reservar tu cita! Nos pondremos en contacto contigo pronto.
+            </div>
+        </section>
+
+        <section class="map-container mt-5">
+            <h2>Ubicación</h2>
+            <div class="ratio ratio-16x9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.567830138267!2d-122.40750568468173!3d37.78373157975885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807b84c2e39f%3A0x5105b92c6f93e6a4!2sCalle%20Ficticia%20123%2C%20Ciudad%20Imaginaria%2C%20Pa%C3%ADs%20Inventado!5e0!3m2!1ses!2ses!4v1605288978178!5m2!1ses!2ses"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa de ubicación"></iframe>
+            </div>
+            <p class="mt-3">Nos encontramos en el centro de Lima, en la calle Capón.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+  <div class="footer-top">
+    <a href="#nav" class="back-to-top" aria-label="Volver al inicio">⬆ Volver arriba</a>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Company, Inc.</p>
+    
+    <nav class="footer-links" aria-label="Políticas"><br>
+      <a href="#" class="footer-link">Privacidad</a>
+      <span aria-hidden="true">·</span>
+      <a href="#" class="footer-link">Términos</a>
+    </nav>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="contacto.js"></script>
+</body>
+
+</html>
